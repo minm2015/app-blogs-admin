@@ -1,5 +1,5 @@
 {
-  "name": "app-blogs-admin",
+  "name": "test-ipms",
   "version": "1.0.0",
   "description": "A Vue.js project",
   "author": "xielinsheng",
@@ -13,9 +13,12 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "amaze-vue": "^1.1.16",
     "amazeui-tree": "0.0.5",
+    "iview": "^3.1.5",
     "jquery": "^3.3.1",
     "marked": "^0.5.1",
+    "save": "^2.3.2",
     "vue": "^2.5.2",
     "vue-resource": "^1.2.1",
     "vue-router": "^3.0.1"
