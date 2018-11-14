@@ -2,17 +2,17 @@
   <div class="am-g tpl-g">
       <app-header/>
       <app-sider/>
-      <div class="tpl-content-wrapper">
-      </div>
+      <app-content/>
   </div>
 </template>
 <script>
 import AppHeader from '@/views/header'
 import AppSider from '@/views/sider'
+import AppContent from '@/views/content'
 export default {
   name: 'index',
   components: {
-    AppHeader, AppSider
+    AppHeader, AppSider, AppContent
   },
   created () {
   }
