@@ -139,7 +139,6 @@
 export default {
   mounted () {
     $('.tpl-header-switch-button').on('click', function () {
-      console.log('hello word')
       if ($('.left-sidebar').is('.active')) {
         if ($(window).width() > 1024) {
           $('.tpl-content-wrapper').removeClass('active')

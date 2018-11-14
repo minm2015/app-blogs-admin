@@ -8,13 +8,13 @@
 <script>
 import AppHeader from '@/views/header'
 import AppSider from '@/views/sider'
-import AppContent from '@/views/content'
+import AppContent from '@/views/main'
 export default {
   name: 'index',
   components: {
     AppHeader, AppSider, AppContent
   },
-  created () {
+  mounted () {
   }
 }
 </script>
