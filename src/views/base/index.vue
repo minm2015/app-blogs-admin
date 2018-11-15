@@ -6,9 +6,9 @@
   </div>
 </template>
 <script>
-import AppHeader from '@/views/header'
-import AppSider from '@/views/sider'
-import AppContent from '@/views/main'
+import AppHeader from '@/views/base/header'
+import AppSider from '@/views/base/sider'
+import AppContent from '@/views/base/main'
 export default {
   name: 'index',
   components: {

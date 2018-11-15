@@ -12,7 +12,6 @@
 <script>
 export default {
   mounted () {
-    console.log('hello word')
   }
 }
 </script>
