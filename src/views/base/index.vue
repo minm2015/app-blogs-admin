@@ -11,22 +11,15 @@ import AppSider from '@/views/base/sider'
 import AppContent from '@/views/base/main'
 export default {
   name: 'index',
+  mounted () {
+    this.$router.replace('/home')
+  },
   data () {
     return {
     }
   },
   components: {
     AppHeader, AppSider, AppContent
-  },
-  mounted () {
-  },
-  methods: {
-  },
-  watch: {
-    current_model: function (curVal, oldVal) {
-      console.log(curVal)
-      console.log(oldVal)
-    }
   }
 }
 </script>
