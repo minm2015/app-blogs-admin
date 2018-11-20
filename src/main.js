@@ -10,6 +10,7 @@ import './assets/css/app.css'
 
 Vue.use(AmazeVue)
 Vue.use(VueResource)
+Vue.prototype.current_model = 'index'
 
 /* eslint-disable no-new */
 new Vue({

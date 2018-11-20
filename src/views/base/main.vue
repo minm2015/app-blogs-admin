@@ -11,7 +11,19 @@
 </template>
 <script>
 export default {
+  data () {
+    return {
+      model: this.current_model
+    }
+  },
   mounted () {
+    console.log(this.model)
+  },
+  watch: {
+    model: function (curVal, oldVal) {
+      console.log(curVal)
+      console.log(oldVal)
+    }
   }
 }
 </script>
