@@ -23,7 +23,7 @@ export default {
   methods: {
     activeMenu: function (index, model) {
       this.isActive = index
-      this.current_model = model
+      this.$store.state.model = model
     }
   },
   watch: {
