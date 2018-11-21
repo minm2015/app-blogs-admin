@@ -5,8 +5,6 @@ import AmazeVue from 'amaze-vue'
 import store from './commons/store.js'
 import router from './commons/router.js'
 import 'amaze-vue/dist/amaze-vue.css'
-import './assets/css/amazeui.min.css'
-import './assets/css/app.css'
 
 Vue.use(AmazeVue)
 Vue.use(VueResource)

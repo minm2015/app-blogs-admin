@@ -1,13 +1,11 @@
 <template>
     <!-- 菜单 -->
-    <ul class="sidebar-nav">
-        <li v-for="(item, index) in menuList" :key="index" class="sidebar-nav-link"  @click="selected(index)">
-            <router-link :to="item.route" :class="{active: isActive == index}">
-              <i class="sidebar-nav-link-logo" :class="item.class"></i>
-               {{item.name}}
-            </router-link>
-        </li>
-    </ul>
+    <am-nav>
+      <li :class="isActive == index ? 'am-active':'' "
+        v-for="(item, index) in menuList" :key="index" @click="selected(index)">
+        <router-link :to="item.route">{{item.name}}</router-link>
+      </li>
+    </am-nav>
 </template>
 <script>
 export default {
@@ -25,6 +23,7 @@ export default {
   methods: {
     selected: function (index) {
       this.isActive = index
+      console.log('adsads')
     }
   },
   watch: {
