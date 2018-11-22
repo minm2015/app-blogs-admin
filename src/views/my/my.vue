@@ -1,13 +1,9 @@
 <template>
-  <div>111111111111</div>
+  <div></div>
 </template>
+
 <script>
 export default {
-  name: 'home',
-  data () {
-    return {
-    }
-  }
 }
 </script>
 
