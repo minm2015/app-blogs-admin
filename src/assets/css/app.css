@@ -1,5 +1,6 @@
 .el-container, span, a, .is-active {
   color: #fff !important;
+  font-size: 14px;
 }
 a {
   text-decoration:none
@@ -7,8 +8,14 @@ a {
 .el-header {
   padding: 0px;
   width: 100%;
-  background: #545c64;
+  background-color: #373d41;
   height: 50px !important;
+}
+.app-log {
+  width: 180px;
+}
+.app-language {
+  border-left: 1px solid black; 
 }
 .topbar-left {
   float: left;
@@ -16,28 +23,31 @@ a {
 .topbar-right{
   float: right;
 }
-.app-log{
-  border-right: 1px solid black;
-}
-.app-language {
-  border-left: 1px solid black; 
-}
-.app-log, .app-language  {
-  height: 50px;
-  line-height: 50px;
-  padding:0 20px;
-}
-.app-el-menu-item-top {
-  padding: 0 30px;
-}
 .el-menu-item {
   border: 0px !important;
 }
-.is-active {
-  background: rgb(51, 205, 229) !important;
+
+.el-menu, .el-menu--horizontal{
+  border-bottom: 0px !important;
 }
-.app-el-menu-item-top, .app-el-menu-top {
- border: 0px !important;
- height: 100% !important;
- line-height: 50px !important;
+.topbar-btn{
+  height: 50px !important;
+  line-height: 50px;
+  padding:0 30px !important;
+}
+.topbar-btn:hover{
+  cursor: pointer
+}
+.app-log:hover, .app-language:hover, .app-top-search:hover, .app-top-add:hover, .app-top-setting:hover{
+  background-color: rgb(44, 49, 52) !important; 
+}
+.topbar-btn > a{
+  display: block;
+  line-height: 50px;
+}
+.topbar-head {
+  border-right: 1px solid black;
+}
+.is-active{
+  background-color:  rgb(51, 205, 229) !important;
 }
