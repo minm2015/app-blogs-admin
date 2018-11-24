@@ -1,47 +1,48 @@
 <template>
-  <el-header>
-    <div class="topbar-left app-log topbar-head">
+  <el-header class="top-container">
+    <div class="topbar-left">
         <router-link to="/" class="topbar-btn">
             测试效能平台
         </router-link>
     </div>
-    <div class="topbar-head topbar-left app-top-nav">
-        <el-menu mode="horizontal" background-color="#373d41" text-color="#fff" active-text-color="#33cde5">
-            <el-menu-item index="1" class="topbar-btn">
-              <router-link to="welcome">首页</router-link>
+    <div class="topbar-left">
+        <el-menu mode="horizontal" class="top-nav"
+        background-color="#373d41" text-color="#fff" active-text-color="#33cde5">
+            <el-menu-item index="1">
+              <router-link to="welcome" class="topbar-btn">首页</router-link>
             </el-menu-item>
-            <el-menu-item index="2" class="topbar-btn">
-              <router-link to="my">我的</router-link>
+            <el-menu-item index="2">
+              <router-link to="my" class="topbar-btn">我的</router-link>
             </el-menu-item>
-            <el-menu-item index="3" class="topbar-btn">
-               <router-link to="welcome">项目</router-link>
+            <el-menu-item index="3">
+               <router-link to="welcome" class="topbar-btn">项目</router-link>
             </el-menu-item>
         </el-menu>
     </div>
-    <div class="topbar-right app-top-right">
-      <div class="topbar-head topbar-left app-top-search">
-        <span class="topbar-btn"><li class="el-icon-search"></li></span>
+    <div class="topbar-right top-right-container">
+      <div class="topbar-left">
+        <span class="topbar-btn top-right-topbar-btn"><li class="el-icon-search"></li></span>
       </div>
-      <div class="topbar-head topbar-left app-top-add topbar-right-menu-list">
-        <span class="topbar-btn"><li class="el-icon-plus"></li></span>
-        <ul class="topbar-btn-menu-list">
+      <div class="topbar-left topbar-right-dropdown">
+        <span class="topbar-btn top-right-topbar-btn"><li class="el-icon-plus"></li></span>
+        <ul class="topbar-right-menu-list">
           <li><router-link to="">add</router-link></li>
           <li>bbbb</li>
           <li>cccc</li>
           <li>dddd</li>
         </ul>
       </div>
-      <div class="topbar-head topbar-left app-top-message topbar-right-menu-list">
-        <span class="topbar-btn"><li class="el-icon-bell"></li></span>
+      <div class="topbar-left topbar-right-dropdown">
+        <span class="topbar-btn top-right-topbar-btn"><li class="el-icon-bell"></li></span>
       </div>
-      <div class="topbar-head topbar-left app-top-setting topbar-right-menu-list">
-        <span class="topbar-btn"><li class="el-icon-setting"></li></span>
+      <div class="topbar-left topbar-right-dropdown">
+        <span class="topbar-btn top-right-topbar-btn"><li class="el-icon-setting"></li></span>
       </div>
-      <div class="topbar-head topbar-left app-top-user">
-        <span class="topbar-btn">谢*临时</span>
+      <div class="topbar-left">
+        <span class="topbar-btn top-right-topbar-btn app-top-user">谢*临时</span>
       </div>
-      <div class="topbar-left app-language">
-        <span class="topbar-btn">
+      <div class="topbar-left">
+        <span class="topbar-btn top-right-topbar-btn">
           <el-dropdown  @command="tglanguage"  trigger="click" style="width:80px">
               <span class="el-dropdown-link">{{language.value}}<i class="el-icon-arrow-down el-icon--right" style="float: right; line-height: 50px;"></i></span>
               <el-dropdown-menu slot="dropdown">
