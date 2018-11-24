@@ -1,11 +1,20 @@
+.el-container{
+  height: 100%; 
+}
 .el-container, span, a, .is-active {
   color: #fff !important;
   font-size: 14px;
+}
+ul {
+  list-style:none;
+  margin: 0px;
+  padding: 0px;
 }
 a {
   text-decoration:none
 } 
 .el-header {
+  position: fixed;
   padding: 0px;
   width: 100%;
   background-color: #373d41;
@@ -14,9 +23,6 @@ a {
 .app-log {
   width: 180px;
 }
-.app-language {
-  border-left: 1px solid black; 
-}
 .topbar-left {
   float: left;
 }
@@ -24,21 +30,25 @@ a {
   float: right;
 }
 .el-menu-item {
-  border: 0px !important;
+  border: none !important;
 }
 
 .el-menu, .el-menu--horizontal{
-  border-bottom: 0px !important;
+  border-bottom: none !important;
 }
 .topbar-btn{
   height: 50px !important;
   line-height: 50px;
   padding:0 30px !important;
+  border-right: 1px solid black;
+}
+a.topbar-btn, span.topbar-btn{
+  display: block;
 }
 .topbar-btn:hover{
   cursor: pointer
 }
-.app-log:hover, .app-language:hover, .app-top-search:hover, .app-top-add:hover, .app-top-setting:hover{
+span.topbar-btn:hover, a.topbar-btn:hover{
   background-color: rgb(44, 49, 52) !important; 
 }
 .topbar-btn > a{
@@ -46,8 +56,38 @@ a {
   line-height: 50px;
 }
 .topbar-head {
-  border-right: 1px solid black;
+  height: 50px;
 }
 .is-active{
   background-color:  rgb(51, 205, 229) !important;
+}
+.app-top-right{
+  border-left: 1px solid black;
+}
+.app-language > span{
+  border-right: none;
+  padding: 0 15px !important;
+}
+.app-top-nav{
+  border-right: none;
+}
+
+.topbar-btn-menu-list{
+  position:absolute;
+  width: 100px;
+  color: #000;
+  border: 1px solid #ddd;
+  border-top: none;
+  right: 0;
+}
+.topbar-btn-menu-list > li {
+  width: 100%;
+}
+.app-top-right{
+  position: absolute;
+  right: 0;
+}
+.topbar-right-menu-list {
+  position: relative;
+  right: 0;
 }

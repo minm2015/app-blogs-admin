@@ -1,0 +1,35 @@
+.top-container{
+  position: fixed;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  background-color: #373d41;
+}
+.top-right-container{
+  position: absolute;
+  right: 0;
+}
+.topbar-btn {
+  height: 50px;
+  line-height: 50px;
+  padding:0 20px;
+  background-color: rgb(44, 49, 52); 
+}
+.top-right-topbar-btn{
+  border-left: 1px solid black;
+}
+
+.topbar-btn:hover {
+  cursor: pointer;
+}
+a.topbar-btn, span.topbar-btn {
+  display: block;
+}
+.topbar-left {
+  float: left;
+}
+.topbar-right{
+  float: right;
+}
+
+

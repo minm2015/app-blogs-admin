@@ -11,31 +11,45 @@
               <router-link to="welcome">首页</router-link>
             </el-menu-item>
             <el-menu-item index="2" class="topbar-btn">
-              <router-link to="welcome">我的</router-link>
+              <router-link to="my">我的</router-link>
             </el-menu-item>
             <el-menu-item index="3" class="topbar-btn">
                <router-link to="welcome">项目</router-link>
             </el-menu-item>
         </el-menu>
     </div>
-    <div class="topbar-right">
+    <div class="topbar-right app-top-right">
       <div class="topbar-head topbar-left app-top-search">
         <span class="topbar-btn"><li class="el-icon-search"></li></span>
       </div>
-      <div class="topbar-head topbar-left app-top-add">
+      <div class="topbar-head topbar-left app-top-add topbar-right-menu-list">
         <span class="topbar-btn"><li class="el-icon-plus"></li></span>
+        <ul class="topbar-btn-menu-list">
+          <li><router-link to="">add</router-link></li>
+          <li>bbbb</li>
+          <li>cccc</li>
+          <li>dddd</li>
+        </ul>
       </div>
-      <div class="topbar-head topbar-left app-top-setting">
+      <div class="topbar-head topbar-left app-top-message topbar-right-menu-list">
+        <span class="topbar-btn"><li class="el-icon-bell"></li></span>
+      </div>
+      <div class="topbar-head topbar-left app-top-setting topbar-right-menu-list">
         <span class="topbar-btn"><li class="el-icon-setting"></li></span>
       </div>
-      <div class="topbar-right app-language">
-          <el-dropdown  @command="tglanguage"  trigger="click" style="width:80px" class="topbar-btn">
+      <div class="topbar-head topbar-left app-top-user">
+        <span class="topbar-btn">谢*临时</span>
+      </div>
+      <div class="topbar-left app-language">
+        <span class="topbar-btn">
+          <el-dropdown  @command="tglanguage"  trigger="click" style="width:80px">
               <span class="el-dropdown-link">{{language.value}}<i class="el-icon-arrow-down el-icon--right" style="float: right; line-height: 50px;"></i></span>
               <el-dropdown-menu slot="dropdown">
                   <el-dropdown-item command="en">English</el-dropdown-item>
                   <el-dropdown-item command="cn">简体中文</el-dropdown-item>
               </el-dropdown-menu>
           </el-dropdown>
+        </span>
       </div>
     </div>
   </el-header>
