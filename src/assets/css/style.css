@@ -6,7 +6,20 @@
 a {
   text-decoration:none;
   color: #fff !important;
+  display: block;
 }
+a :hover {
+  cursor: pointer;
+}
+
+span {
+  display: block;
+}
+
+ul  li {
+  list-style-type:none;
+}
+
 .top-container{
   position: fixed;
   padding: 0px;
@@ -28,21 +41,19 @@ a {
 .top-right-container{
   position: absolute;
   right: 0;
+  border-left: 1px solid black;
 }
 .topbar-btn {
   height: 50px;
   line-height: 50px;
   padding:0 20px;
 }
-.top-right-topbar-btn{
-  border-left: 1px solid black;
+.top-right-topbar-btn, .app-log{
+  border-right: 1px solid black;
 }
 
 .topbar-btn:hover {
   cursor: pointer;
-}
-a.topbar-btn, span.topbar-btn {
-  display: block;
 }
 .topbar-left {
   float: left;
@@ -56,17 +67,39 @@ a.topbar-btn, span.topbar-btn {
 .topbar-right-dropdown{
   position: relative;
 }
-.topbar-right-menu-list {
+
+.app-top-user {
+  width: 120px;
+  text-align: center
+}
+
+.app-log {
+  width: 180px;
+  text-align: center
+}
+
+.top-right-topbar-btn > li {
+  margin: 0 5px;
+}
+
+.topbar-right-menu-list-add {
   position: absolute;
   right: 0;
   color: #000;
   border-top: none !important;
   border: 1px solid #ddd;
-  width: 100%;
   margin: 0;
-  padding: 0;
+  width: 140px;
+  padding: 10px 0;
 }
-.app-top-user {
-  width: 120px;
-  text-align: center
+
+.topbar-right-menu-list-add > li > a {
+  color: #000 !important;
+  padding: 0 20px;
+  white-space: nowrap;
+  height: 40px;
+  line-height: 40px;
+}
+.topbar-right-menu-list-add > li > a:hover {
+  background: #f5f5f5;
 }
